@@ -1,0 +1,119 @@
+class base
+{
+  public:
+virtual void fun()
+{}
+virtual ~base()
+{}
+};
+class derived:public base
+{
+  public:
+void fun()
+{}
+~derived()
+{}
+};
+
+int main()
+{
+ base*ptr=new derived;
+ptr->fun();
+delete ptr;  
+return 0;
+}
+
+
+class sattcifun
+{
+static int i;
+   public:
+static int getvalue()
+{
+  return i;
+}
+
+
+};
+
+int staticfun::i=0;
+int main()
+{
+
+int j= staticfun::getvalue();
+return 0;
+}
+
+void fun(int i)
+{
+try
+{
+
+
+if(i >=18)
+{
+ cout<<"valid"<<endl;
+}
+else
+{
+throw (i);
+}
+}
+catch(int ex)
+{
+
+cout<<i<<"is invalid"<<endl;
+}
+
+}
+
+int main()
+{
+   fun(15);
+
+}
+
+
+
+string str ="a2b4c3";
+int count =0;
+string temp;
+for(char c:str)
+{
+   if(isdigit(c))
+{
+  count = count*10+(c-'0');
+
+}
+else
+{
+  if(count > 0)
+{
+ temp.append(count,c);
+count=0;
+}  
+else
+{
+temp=temp+c;
+}
+}
+
+}
+
+cout<<temp;
+
+int Aroom=202;
+int Broom =605;
+int rooms=10;
+int travel=0;
+
+
+if(Aroom >Broom)
+{
+  travel=Aroom-Broom;
+}
+else
+{
+travel=Broom-Aroom;
+}
+op= aabbbbccc
