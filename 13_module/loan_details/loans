@@ -1,0 +1,8 @@
+package loans
+
+func Loan_amount(principal, rateOfInterest, time float64) float64 {
+
+	simpleInterest := (principal * rateOfInterest * time) / 100
+
+	return simpleInterest
+}

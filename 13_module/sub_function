@@ -1,0 +1,10 @@
+package main
+
+import "fmt"
+
+var Bank = "axis"
+
+func Emp_details(designation string) string {
+	fmt.Println(designation)
+	return designation
+}
